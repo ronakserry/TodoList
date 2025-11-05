@@ -1,0 +1,183 @@
+*{
+    color: #141414;
+    font-family: 'Ovo', serif;
+    box-sizing: border-box;
+}
+  
+.bg{
+    background-image: url('./back.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: grid;
+    padding: 1rem;
+}
+
+.title{
+    background-color: #f5f5f5;
+    width: 15rem;
+    height: 3rem;
+}
+
+/* Layout wrappers */
+.MainBox{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    margin: 0; 
+}
+
+/* Glassmorphism sidebar */
+.Sidebar{
+    position: relative;
+    height: 70vh;
+    max-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.SidebarNav{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.NavItem{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    color: #111827;
+    background: rgba(255,255,255,0.55);
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform .15s ease, background .2s ease, box-shadow .2s ease;
+}
+.NavItem:hover{
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+.NavItem:active{
+    transform: translateY(0);
+}
+
+.SidebarProfile{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.5rem;
+    display: grid;
+    place-items: center;
+}
+.Avatar{
+    width: 36px;
+    height: 36px;
+    border-radius: 9999px;
+    object-fit: cover;
+    border: 1.5px solid rgba(255,255,255,0.7);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.content{
+    padding-right: 0.5rem;
+}
+
+
+/* Glassmorphism progress card */
+.ProgressCard{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto 0.75rem auto;
+    padding: 0.75rem 1rem;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.55);
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.ProgressHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.ProgressTitle{
+    font-weight: 600;
+}
+.ProgressValue{
+    font-size: 0.875rem;
+    color: #374151;
+}
+.ProgressTrack{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-radius: 9999px;
+    background: rgba(255,255,255,0.6);
+    border: 1px solid rgba(255,255,255,0.75);
+    overflow: hidden;
+}
+.ProgressBar{
+    height: 100%;
+    width: 0%;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, rgba(17,24,39,0.85), rgba(55,65,81,0.85));
+    box-shadow: inset 0 0 6px rgba(255,255,255,0.35);
+    transition: width 200ms ease;
+}
+
+
+
+.TaskInput{ 
+    display: flex; 
+    align-items: center; 
+    gap: 0.75rem; 
+    width: 320px; 
+    padding: 0.75rem 1rem; 
+    border-radius: 14px; 
+    background: rgba(255,255,255,0.55); 
+    border: 1px solid rgba(255,255,255,0.6); 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); } 
+.TaskField{ 
+        flex: 1; 
+        border: none; 
+        background: transparent; 
+        outline: none; 
+        font-size: 1rem;} 
+.TaskField::placeholder{ 
+    color: #6b7280; } 
+.AddButton{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: 
+    center; width: 40px; 
+    height: 40px; 
+    border-radius: 10px; 
+    background: rgba(107,114,128,0.8); 
+    border: 1px solid rgba(107,114,128,0.9); 
+    color: white; 
+    cursor: pointer; 
+    transition: all 0.2s ease; } 
+.AddButton:hover{ 
+    background: rgba(107,114,128,0.9); 
+    transform: translateY(-1px); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); } 
+.AddButton:active{ transform: translateY(0); }
+
